@@ -209,4 +209,4 @@ amol1/
 1TAP-REACT/
 techhelpdesk/
 *.lock
-**/ignored_dir/
+**/node_modules/
