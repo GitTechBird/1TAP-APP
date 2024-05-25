@@ -206,7 +206,7 @@ srikant/
 amol/
 amol1/
 1tap-test/
-1TAP-REACT/
-techhelpdesk/
+# 1TAP-REACT/
+# techhelpdesk/
 *.lock
 **/node_modules/
