@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-19 15:48:02.691751",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "business_activity_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "business_activity_name",
+   "fieldtype": "Link",
+   "label": "Business Activity Name",
+   "options": "OT Business Activity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-19 15:50:49.511343",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "OT Link Business Activity",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

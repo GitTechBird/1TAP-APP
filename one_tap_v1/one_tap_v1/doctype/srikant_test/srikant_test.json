@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-22 10:51:14.171751",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "companydetails_tab",
+  "company_name_section",
+  "option_1",
+  "option_2",
+  "option_3",
+  "activity_details_section",
+  "select",
+  "shareholderdetails_tab",
+  "personal_details_section",
+  "first_name",
+  "email",
+  "date_of_birth",
+  "column_break_ulsi",
+  "last_name",
+  "phone",
+  "passport_details_section",
+  "passport_number",
+  "passport_issue_date",
+  "column_break_vihc",
+  "country",
+  "passport_expiry_date",
+  "uploaddocs_tab",
+  "my_files_section",
+  "adhar",
+  "pan",
+  "file_3",
+  "date_of_birth_cetificate",
+  "revivewconfirm_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "my_files_section",
+   "fieldtype": "Section Break",
+   "label": "Document"
+  },
+  {
+   "fieldname": "file_3",
+   "fieldtype": "Attach",
+   "label": "License"
+  },
+  {
+   "fieldname": "date_of_birth_cetificate",
+   "fieldtype": "Attach",
+   "label": "date of birth cetificate"
+  },
+  {
+   "fieldname": "adhar",
+   "fieldtype": "Attach",
+   "label": "passport"
+  },
+  {
+   "fieldname": "pan",
+   "fieldtype": "Attach",
+   "label": "photo"
+  },
+  {
+   "fieldname": "companydetails_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company_name_section",
+   "fieldtype": "Section Break",
+   "label": "company Name"
+  },
+  {
+   "fieldname": "option_1",
+   "fieldtype": "Data",
+   "label": "option 1"
+  },
+  {
+   "fieldname": "option_2",
+   "fieldtype": "Data",
+   "label": "option 2"
+  },
+  {
+   "fieldname": "option_3",
+   "fieldtype": "Data",
+   "label": "option 3"
+  },
+  {
+   "fieldname": "activity_details_section",
+   "fieldtype": "Section Break",
+   "label": "activity Details"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "label": "select"
+  },
+  {
+   "fieldname": "shareholderdetails_tab",
+   "fieldtype": "Tab Break",
+   "label": "shareHolder Details"
+  },
+  {
+   "fieldname": "uploaddocs_tab",
+   "fieldtype": "Tab Break",
+   "label": "Upload Docs"
+  },
+  {
+   "fieldname": "revivewconfirm_tab",
+   "fieldtype": "Tab Break",
+   "label": "review and Confirm"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "personal details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "first name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "column_break_ulsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last name"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "phone"
+  },
+  {
+   "fieldname": "passport_details_section",
+   "fieldtype": "Section Break",
+   "label": "passport details"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "passport number"
+  },
+  {
+   "fieldname": "passport_issue_date",
+   "fieldtype": "Date",
+   "label": "passport issue date"
+  },
+  {
+   "fieldname": "column_break_vihc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "country"
+  },
+  {
+   "fieldname": "passport_expiry_date",
+   "fieldtype": "Date",
+   "label": "passport expiry date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 16:11:09.712252",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "srikant_test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

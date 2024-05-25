@@ -1,0 +1,587 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-24 17:20:35.031362",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_tab",
+  "basic_information_section",
+  "partner_name",
+  "partner_type",
+  "partner_email_address",
+  "application_date",
+  "partner_id",
+  "visa_type",
+  "column_break_t13w",
+  "visa_application_type",
+  "section_break_2",
+  "if_16_is_out_of_country_outside_country_visa_declaration",
+  "section_break_7ouy",
+  "if_16_is_in_country_current_visa_status",
+  "section_break_1",
+  "in_country_application_entry_stamp",
+  "visa_valid_until",
+  "resident_visa_stamping_type",
+  "nationality_of_the_appliciant",
+  "application_information_tab",
+  "name_in_english",
+  "do_you_have_arabic_translation_of_your_name_on_your_passport",
+  "email_address",
+  "phone",
+  "column_break_byuz",
+  "uae_address_if_applicable",
+  "home_country_address",
+  "do_you_have_a_previous_emirates_id",
+  "emirates_id_number",
+  "emirates_id_expiry_date",
+  "emirates_id_copy",
+  "passport_details_tab",
+  "nationality",
+  "passport_number",
+  "place_of_issue",
+  "place_of_issue_arabic",
+  "passport_type",
+  "agreement_to_passport_rules",
+  "country_of_issuance",
+  "passport_issue_date",
+  "passport_expiry_date",
+  "city_of_birth",
+  "column_break_ccqu",
+  "city_of_birth_arabic",
+  "country_of_birth",
+  "date_of_birth",
+  "gender",
+  "previous_nationality_if_any",
+  "marital_status",
+  "religion",
+  "fathers_full_name",
+  "mothers_full_name",
+  "mothers_full_name_arabic",
+  "employment_details_tab",
+  "type_of_employment",
+  "employment_duration_in_months",
+  "job_title",
+  "employment_start_date",
+  "probation_period",
+  "employment_termination_notice",
+  "column_break_cbvv",
+  "educational_qualification",
+  "return_ticket_eligibility",
+  "ticket_entitlement_period",
+  "annual_leave_entitlement",
+  "salery_breakdown_tab",
+  "basic_salary",
+  "transportation_allowance",
+  "column_break_fobu",
+  "accommodation_allowance",
+  "other_allowance",
+  "total_monthly_salary_aed",
+  "company_details_tab",
+  "company_name",
+  "trade_license_number",
+  "establishment_card_number",
+  "column_break_at7h",
+  "authorized_signatorygeneral_manager",
+  "email_address_of_general_managerauthorized_signatory",
+  "promotion_code",
+  "attachments_tab",
+  "passport",
+  "passport_photo",
+  "visa_applicant_files",
+  "proof_of_payment",
+  "column_break_6eqj",
+  "preferred_payment_method",
+  "visa_fee",
+  "status_change",
+  "total_amount_to_be_paid"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Data",
+   "label": "Partner Name"
+  },
+  {
+   "fieldname": "partner_type",
+   "fieldtype": "Select",
+   "label": "Partner Type",
+   "options": "Professional Partner\nReferral Partner"
+  },
+  {
+   "fieldname": "partner_email_address",
+   "fieldtype": "Data",
+   "label": "Partner Email Address"
+  },
+  {
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "label": "Application Date"
+  },
+  {
+   "fieldname": "partner_id",
+   "fieldtype": "Int",
+   "label": "Partner ID"
+  },
+  {
+   "fieldname": "visa_type",
+   "fieldtype": "Select",
+   "label": "Visa Type",
+   "options": "New Employment Visa\nNew Investor Visa\nNew Partner Visa\nEmployment Visa Renewal\nNew Work Permit\nWork Permit Renewal\nVisa Transfer"
+  },
+  {
+   "fieldname": "visa_application_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "visa_application_type",
+   "options": "Out Of Country\nIn  Country"
+  },
+  {
+   "default": "0",
+   "fieldname": "if_16_is_out_of_country_outside_country_visa_declaration",
+   "fieldtype": "Check",
+   "label": "(if 1.6 is out of country) outside_country_visa_declaration"
+  },
+  {
+   "fieldname": "if_16_is_in_country_current_visa_status",
+   "fieldtype": "Select",
+   "label": "(if 1.6 is in country) current_visa_status",
+   "options": "Tourist\nCancelled\nVisa On Arrival\nActive Residence Visa"
+  },
+  {
+   "fieldname": "in_country_application_entry_stamp",
+   "fieldtype": "Data",
+   "label": "in country application_entry_stamp"
+  },
+  {
+   "fieldname": "nationality_of_the_appliciant",
+   "fieldtype": "Select",
+   "label": "nationality_of_the_appliciant",
+   "options": "Afghanistan\nAlbania\nAlgeria\nAndorra\nAngola\nAntigua and Barbuda\nBelgium\nBelize\nBenin\nBhutan\nBrazil\nCambodia\nCanada\nChile\nChina\nColombia\nDenmark\nIndia\nIran\nIreland\nJapan\nKazakhstan\nKyrgyzstan\nLiberia\nMalaysia"
+  },
+  {
+   "fieldname": "resident_visa_stamping_type",
+   "fieldtype": "Select",
+   "label": "Resident_visa_stamping_type",
+   "options": "Standard\nVIP"
+  },
+  {
+   "fieldname": "visa_valid_until",
+   "fieldtype": "Data",
+   "label": "Visa_valid_until"
+  },
+  {
+   "fieldname": "column_break_t13w",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "application_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Application Information"
+  },
+  {
+   "fieldname": "name_in_english",
+   "fieldtype": "Data",
+   "label": "Name_in_english"
+  },
+  {
+   "fieldname": "do_you_have_arabic_translation_of_your_name_on_your_passport",
+   "fieldtype": "Select",
+   "label": "Do you have Arabic Translation of your name on your Passport?",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email_address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "uae_address_if_applicable",
+   "fieldtype": "Data",
+   "label": "UAE Address (if Applicable)"
+  },
+  {
+   "fieldname": "home_country_address",
+   "fieldtype": "Data",
+   "label": "Home_country_address"
+  },
+  {
+   "fieldname": "do_you_have_a_previous_emirates_id",
+   "fieldtype": "Select",
+   "label": "Do you have a previous Emirates ID",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "emirates_id_number",
+   "fieldtype": "Int",
+   "label": "Emirates_ID_number"
+  },
+  {
+   "fieldname": "emirates_id_expiry_date",
+   "fieldtype": "Date",
+   "label": "Emirates_ID_expiry_date"
+  },
+  {
+   "fieldname": "emirates_id_copy",
+   "fieldtype": "Data",
+   "label": "Emirates_ID_copy"
+  },
+  {
+   "fieldname": "column_break_byuz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "basic_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "passport_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Passport Details"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "Afghanistan\nAlbania\nAlgeria\nAndorra\nAngola\nAntigua and Barbuda\nBelgium\nBelize\nBenin\nBhutan\nBrazil\nCambodia\nCanada\nChile\nChina\nColombia\nDenmark\nIndia\nIran\nIreland\nJapan\nKazakhstan\nKyrgyzstan\nLiberia\nMalaysia\nNorway\nOman\nPakistan\nPalau"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Int",
+   "label": "Passport_number "
+  },
+  {
+   "fieldname": "place_of_issue",
+   "fieldtype": "Data",
+   "label": "Place_of_issue"
+  },
+  {
+   "fieldname": "place_of_issue_arabic",
+   "fieldtype": "Data",
+   "label": "Place_of_issue (Arabic)"
+  },
+  {
+   "fieldname": "passport_type",
+   "fieldtype": "Select",
+   "label": "Passport_type",
+   "options": "Ordinary"
+  },
+  {
+   "fieldname": "agreement_to_passport_rules",
+   "fieldtype": "Data",
+   "label": "Agreement_to_passport_rules"
+  },
+  {
+   "fieldname": "country_of_issuance",
+   "fieldtype": "Data",
+   "label": "Country_of_issuance"
+  },
+  {
+   "fieldname": "passport_issue_date",
+   "fieldtype": "Data",
+   "label": "Passport_issue_date"
+  },
+  {
+   "fieldname": "passport_expiry_date",
+   "fieldtype": "Date",
+   "label": "Passport_expiry_date"
+  },
+  {
+   "fieldname": "city_of_birth",
+   "fieldtype": "Data",
+   "label": "City_of_birth"
+  },
+  {
+   "fieldname": "city_of_birth_arabic",
+   "fieldtype": "Data",
+   "label": "City_of_birth (Arabic)"
+  },
+  {
+   "fieldname": "country_of_birth",
+   "fieldtype": "Data",
+   "label": "Country_of_birth"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Data",
+   "label": "Date_of_birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "previous_nationality_if_any",
+   "fieldtype": "Data",
+   "label": "Previous_nationality (if any)"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Data",
+   "label": "Marital_status"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion"
+  },
+  {
+   "fieldname": "fathers_full_name",
+   "fieldtype": "Data",
+   "label": "Father's_full_name"
+  },
+  {
+   "fieldname": "mothers_full_name",
+   "fieldtype": "Data",
+   "label": "Mother's_full_name"
+  },
+  {
+   "fieldname": "mothers_full_name_arabic",
+   "fieldtype": "Data",
+   "label": "Mother's_full_name (Arabic)"
+  },
+  {
+   "fieldname": "column_break_ccqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employment_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Employment Details"
+  },
+  {
+   "fieldname": "type_of_employment",
+   "fieldtype": "Data",
+   "label": "Type_of_employment"
+  },
+  {
+   "fieldname": "employment_duration_in_months",
+   "fieldtype": "Data",
+   "label": "Employment_duration_in_months"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job_title"
+  },
+  {
+   "fieldname": "employment_start_date",
+   "fieldtype": "Date",
+   "label": "Employment_start_date"
+  },
+  {
+   "fieldname": "probation_period",
+   "fieldtype": "Select",
+   "label": "Probation_period",
+   "options": "1 Months\n2 Months\n3 Months\n4 Months\n5 Months\n6 Months\n7 Months"
+  },
+  {
+   "fieldname": "employment_termination_notice",
+   "fieldtype": "Select",
+   "label": "Employment_termination_notice",
+   "options": "1 Months\n2 Months\n3 Months\n4 Months\n5 Months\n6 Months\n7 Months"
+  },
+  {
+   "fieldname": "educational_qualification",
+   "fieldtype": "Select",
+   "label": "Educational_qualification",
+   "options": "No formal education\nPrimary\nHigh School\nVocational\nBachler's Degree\nMaster's Degree"
+  },
+  {
+   "fieldname": "return_ticket_eligibility",
+   "fieldtype": "Select",
+   "label": "Return_ticket_eligibility",
+   "options": "Economy\nBusiness\nFirst Class\nNo Entitlement"
+  },
+  {
+   "fieldname": "ticket_entitlement_period",
+   "fieldtype": "Select",
+   "label": "Ticket_entitlement_period",
+   "options": "1 Years\n2 Years"
+  },
+  {
+   "fieldname": "annual_leave_entitlement",
+   "fieldtype": "Select",
+   "label": "Annual_leave_entitlement",
+   "options": "Working Days\nCalender Days"
+  },
+  {
+   "fieldname": "column_break_cbvv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salery_breakdown_tab",
+   "fieldtype": "Tab Break",
+   "label": "Salery Breakdown"
+  },
+  {
+   "fieldname": "basic_salary",
+   "fieldtype": "Data",
+   "label": "Basic_salary"
+  },
+  {
+   "fieldname": "transportation_allowance",
+   "fieldtype": "Data",
+   "label": "Transportation_allowance"
+  },
+  {
+   "fieldname": "accommodation_allowance",
+   "fieldtype": "Data",
+   "label": "Accommodation_allowance"
+  },
+  {
+   "fieldname": "other_allowance",
+   "fieldtype": "Data",
+   "label": "Other_allowance"
+  },
+  {
+   "fieldname": "total_monthly_salary_aed",
+   "fieldtype": "Data",
+   "label": "Total_monthly_salary (AED)"
+  },
+  {
+   "fieldname": "company_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company_name"
+  },
+  {
+   "fieldname": "trade_license_number",
+   "fieldtype": "Int",
+   "label": "Trade_license_number"
+  },
+  {
+   "fieldname": "establishment_card_number",
+   "fieldtype": "Data",
+   "label": "Establishment_card_number"
+  },
+  {
+   "fieldname": "authorized_signatorygeneral_manager",
+   "fieldtype": "Data",
+   "label": "Authorized_signatory/General_manager"
+  },
+  {
+   "fieldname": "email_address_of_general_managerauthorized_signatory",
+   "fieldtype": "Data",
+   "label": "Email address_of_general_manager/Authorized_signatory"
+  },
+  {
+   "fieldname": "promotion_code",
+   "fieldtype": "Data",
+   "label": "Promotion_code"
+  },
+  {
+   "fieldname": "attachments_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "passport",
+   "fieldtype": "Data",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "passport_photo",
+   "fieldtype": "Attach Image",
+   "label": "Passport_photo"
+  },
+  {
+   "fieldname": "visa_applicant_files",
+   "fieldtype": "Data",
+   "label": "Visa_applicant_files"
+  },
+  {
+   "fieldname": "proof_of_payment",
+   "fieldtype": "Data",
+   "label": "Proof_of_Payment"
+  },
+  {
+   "fieldname": "preferred_payment_method",
+   "fieldtype": "Select",
+   "label": "Preferred_payment_method",
+   "options": "Cash Payment(IFZA Offices only)\nCheque\nBank transfer\nATM cash Deposit\nCredit Card(Visa/MasterCard)\nAlready Paid with the License Application"
+  },
+  {
+   "fieldname": "visa_fee",
+   "fieldtype": "Float",
+   "label": "Visa Fee"
+  },
+  {
+   "fieldname": "status_change",
+   "fieldtype": "Data",
+   "label": "Status_change"
+  },
+  {
+   "fieldname": "total_amount_to_be_paid",
+   "fieldtype": "Data",
+   "label": "Total_amount_to_be_paid"
+  },
+  {
+   "fieldname": "column_break_6eqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fobu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_at7h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "'eval:doc.visa_application_type === \"In-Country\"';",
+   "fieldname": "section_break_7ouy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "'eval:doc.visa_application_type === \"Out of Country\"';",
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-27 11:40:38.044645",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "Visa",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

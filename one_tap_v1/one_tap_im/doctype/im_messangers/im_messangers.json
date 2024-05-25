@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-04-02 12:10:34.111934",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "im_details_tab",
+  "im_user_section",
+  "im_id",
+  "im_name",
+  "im_handle",
+  "im_response_path",
+  "section_break_divn",
+  "islivechat",
+  "im_customer_mapping",
+  "im_customer_name",
+  "hd_customer_name",
+  "tab_2_tab",
+  "im_bot_section",
+  "bot_id",
+  "bot_user",
+  "bot_type",
+  "bot_name",
+  "bot_integration_slug",
+  "desk_agent_details_tab",
+  "hd_agent",
+  "hd_team"
+ ],
+ "fields": [
+  {
+   "fieldname": "im_user_section",
+   "fieldtype": "Section Break",
+   "label": "IM User"
+  },
+  {
+   "fieldname": "im_id",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "IM Id",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "im_name",
+   "fieldtype": "Data",
+   "label": "IM Name"
+  },
+  {
+   "fieldname": "im_handle",
+   "fieldtype": "Data",
+   "label": "IM Handle"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "IM Bot Details"
+  },
+  {
+   "fieldname": "im_bot_section",
+   "fieldtype": "Section Break",
+   "label": "IM Bot"
+  },
+  {
+   "fieldname": "bot_id",
+   "fieldtype": "Data",
+   "label": "Bot ID"
+  },
+  {
+   "fieldname": "bot_user",
+   "fieldtype": "Data",
+   "label": "Bot User"
+  },
+  {
+   "fieldname": "bot_type",
+   "fieldtype": "Data",
+   "label": "Bot Type"
+  },
+  {
+   "fieldname": "bot_name",
+   "fieldtype": "Data",
+   "label": "Bot Name"
+  },
+  {
+   "fieldname": "bot_integration_slug",
+   "fieldtype": "Data",
+   "label": "Bot Integration Slug"
+  },
+  {
+   "fieldname": "im_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "IM Details"
+  },
+  {
+   "fieldname": "im_response_path",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IM Response Path",
+   "reqd": 1
+  },
+  {
+   "fieldname": "desk_agent_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Desk Agent Details"
+  },
+  {
+   "fieldname": "hd_agent",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "HD Agent",
+   "options": "HD Agent"
+  },
+  {
+   "fieldname": "hd_team",
+   "fieldtype": "Link",
+   "label": "HD Team",
+   "options": "HD Team"
+  },
+  {
+   "fieldname": "section_break_divn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "islivechat",
+   "fieldtype": "Check",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "isLiveChat"
+  },
+  {
+   "fieldname": "im_customer_mapping",
+   "fieldtype": "Section Break",
+   "label": "IM Customer Details"
+  },
+  {
+   "fieldname": "im_customer_name",
+   "fieldtype": "Link",
+   "label": "IM Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "hd_customer_name",
+   "fieldtype": "Link",
+   "label": "HD Customer Name",
+   "options": "HD Customer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "IM Communications",
+   "link_fieldname": "messanger_id"
+  },
+  {
+   "link_doctype": "IM Ticket",
+   "link_fieldname": "im_messanger_id"
+  }
+ ],
+ "modified": "2024-05-21 16:19:16.280473",
+ "modified_by": "Administrator",
+ "module": "one_tap_IM",
+ "name": "IM Messangers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

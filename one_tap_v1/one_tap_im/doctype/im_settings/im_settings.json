@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-02 10:44:15.164027",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "channel_id",
+  "user_id",
+  "socket_url",
+  "im_provider"
+ ],
+ "fields": [
+  {
+   "fieldname": "channel_id",
+   "fieldtype": "Data",
+   "label": "Channel Id"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User Id"
+  },
+  {
+   "fieldname": "socket_url",
+   "fieldtype": "Data",
+   "label": "Socket Url"
+  },
+  {
+   "fieldname": "im_provider",
+   "fieldtype": "Data",
+   "label": "IM provider"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-02 11:15:17.005022",
+ "modified_by": "Administrator",
+ "module": "one_tap_IM",
+ "name": "IM Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

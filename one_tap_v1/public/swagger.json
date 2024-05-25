@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "My API",
+      "version": "1.0.0",
+      "description": "API documentation for My API"
+    },
+    "paths": {
+      "/api/method/{name}": {
+        "get": {
+          "summary": "Greet the user",
+          "parameters": [
+            {
+              "name": "name",
+              "in": "path",
+              "description": "Name of the user",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "message": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

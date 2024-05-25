@@ -1,0 +1,483 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-02-24 15:59:23.984580",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_information_tab",
+  "information_section",
+  "agentpartner_name",
+  "partner_type",
+  "partner_email_address",
+  "application_date",
+  "partner_id",
+  "column_break_ofjb",
+  "visa_type",
+  "visa_application_type",
+  "outside_country_visa_declaration",
+  "current_visa_status",
+  "in_country_application_entry_stamp",
+  "country_of_operation",
+  "column_break_0rml",
+  "are_you_going_to_operate_as_a_franchise",
+  "please_input_trade_name_of_franchise",
+  "option_1___englisharabic",
+  "data_gwhx",
+  "option_3___englisharabic",
+  "details_tab",
+  "licence_section",
+  "license_type",
+  "trade_license_validity",
+  "partner_name",
+  "section_break_qjes",
+  "do_you_want_to_include_visa_cost_in_license_estimatequote",
+  "if_24_yes_no_of_inside_country_visas",
+  "establishment_card",
+  "tab_3_tab",
+  "shareholder_section",
+  "shareholding_type",
+  "number_of_shareholders",
+  "proposed_share_capital",
+  "share_value",
+  "total_number_of_shares",
+  "share_capital_per_shareholder",
+  "tab_4_tab",
+  "activities_section",
+  "company_will_be_using_the_general_trading_activity_only",
+  "please_select_up_to_3_business_activities",
+  "add_company_members_tab",
+  "company_members_section",
+  "role__1st_member",
+  "name__1st_member",
+  "numbers_of_shares_1st_members",
+  "gender__1st_member",
+  "column_break_xiwm",
+  "email__1st_member",
+  "mobile_phone__1st_company_member",
+  "date_of_birth___1st_member",
+  "passport_number___1st_member",
+  "passport_issue_date__1st_member",
+  "passport_expiry_date__1st_member",
+  "column_break_u2pq",
+  "passport_country_of_issue__1st_member",
+  "passport_place_of_issue__1st_member",
+  "nationality__1st_member",
+  "are_you_uae_resident___1st_member",
+  "resident__member_1",
+  "eid_number",
+  "full_address__1st_member_private_address",
+  "attachments",
+  "add_2nd_member",
+  "ultimate_benificial_ownership_tab",
+  "ownership_section",
+  "the_company_agrees_to_the_statement_below",
+  "if_61_no_add_ubo",
+  "passport_expiry_date___1st_member",
+  "column_break_iysi",
+  "general_managerauthorize_d_signatory_name",
+  "general_managerauthorize_d_signatory_email"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "company_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Information"
+  },
+  {
+   "fieldname": "information_section",
+   "fieldtype": "Section Break",
+   "label": "Information"
+  },
+  {
+   "fieldname": "agentpartner_name",
+   "fieldtype": "Data",
+   "label": "Agent/Partner Name"
+  },
+  {
+   "fieldname": "partner_type",
+   "fieldtype": "Select",
+   "label": "Partner Type",
+   "options": "Professional Partner\nReferral Partner"
+  },
+  {
+   "fieldname": "partner_email_address",
+   "fieldtype": "Data",
+   "label": "Partner Email Address"
+  },
+  {
+   "fieldname": "application_date",
+   "fieldtype": "Data",
+   "label": "Application Date"
+  },
+  {
+   "fieldname": "partner_id",
+   "fieldtype": "Data",
+   "label": "Partner ID"
+  },
+  {
+   "fieldname": "column_break_ofjb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visa_type",
+   "fieldtype": "Select",
+   "label": "Visa Type",
+   "options": "New Employment Visa\nNew Investor Visa\nNew Partner Visa\nEmployment Visa Renewal\nNew Work Permit\nWork Permit Renewal\nVisa Transfer"
+  },
+  {
+   "fieldname": "visa_application_type",
+   "fieldtype": "Select",
+   "label": "Visa Application Type",
+   "options": "Out Of Country\nIn-Country"
+  },
+  {
+   "default": "0",
+   "fieldname": "outside_country_visa_declaration",
+   "fieldtype": "Check",
+   "label": "No active visa in UAE"
+  },
+  {
+   "fieldname": "current_visa_status",
+   "fieldtype": "Select",
+   "label": "Current Visa Status",
+   "options": "Tourist\nCancelled\nVisa On Arrival\nActive Residence Visa"
+  },
+  {
+   "fieldname": "in_country_application_entry_stamp",
+   "fieldtype": "Data",
+   "label": "In Country Application Entry Stamp"
+  },
+  {
+   "fieldname": "country_of_operation",
+   "fieldtype": "Select",
+   "label": "Country of Operation",
+   "options": "India"
+  },
+  {
+   "fieldname": "column_break_0rml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "are_you_going_to_operate_as_a_franchise",
+   "fieldtype": "Data",
+   "label": "Are you going to operate as a Franchise"
+  },
+  {
+   "fieldname": "please_input_trade_name_of_franchise",
+   "fieldtype": "Data",
+   "label": "Please input Trade name of Franchise"
+  },
+  {
+   "fieldname": "option_1___englisharabic",
+   "fieldtype": "Data",
+   "label": "Option 1 _ English/Arabic"
+  },
+  {
+   "fieldname": "data_gwhx",
+   "fieldtype": "Data",
+   "label": "Option 2 _ English/Arabic"
+  },
+  {
+   "fieldname": "option_3___englisharabic",
+   "fieldtype": "Data",
+   "label": "Option 3 _ English/Arabic"
+  },
+  {
+   "bold": 1,
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "License Type"
+  },
+  {
+   "fieldname": "licence_section",
+   "fieldtype": "Section Break",
+   "label": "Licence"
+  },
+  {
+   "fieldname": "license_type",
+   "fieldtype": "Select",
+   "label": "License Type",
+   "options": "Commercial (Include Trade)\nProfessional (Include Service & Consultancy)\nCombinational(Additional charges may apply"
+  },
+  {
+   "fieldname": "trade_license_validity",
+   "fieldtype": "Select",
+   "label": "Trade License Validity",
+   "options": "1 Year\n2 Years\n3 Years\n4 Years\n5 Years"
+  },
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Select",
+   "label": "Partner name",
+   "options": "0 Visa\n1 Visa\n2 Visa\n3 Visa\n4 Visa\nMore than 4 Visas"
+  },
+  {
+   "fieldname": "section_break_qjes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "do_you_want_to_include_visa_cost_in_license_estimatequote",
+   "fieldtype": "Data",
+   "label": "Do you want to include Visa cost in License "
+  },
+  {
+   "fieldname": "if_24_yes_no_of_inside_country_visas",
+   "fieldtype": "Select",
+   "label": "(If 2.4 yes) No. of Inside Country Visas",
+   "options": "0\n1\n2\n3\n4"
+  },
+  {
+   "fieldname": "establishment_card",
+   "fieldtype": "Select",
+   "label": "Establishment Card"
+  },
+  {
+   "bold": 1,
+   "fieldname": "tab_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Shareholder Structure"
+  },
+  {
+   "fieldname": "shareholder_section",
+   "fieldtype": "Section Break",
+   "label": "Shareholder"
+  },
+  {
+   "fieldname": "shareholding_type",
+   "fieldtype": "Data",
+   "label": "Shareholding type"
+  },
+  {
+   "fieldname": "number_of_shareholders",
+   "fieldtype": "Data",
+   "label": "Number of Shareholders"
+  },
+  {
+   "fieldname": "proposed_share_capital",
+   "fieldtype": "Data",
+   "label": "Proposed Share Capital"
+  },
+  {
+   "fieldname": "share_value",
+   "fieldtype": "Data",
+   "label": "Share Value"
+  },
+  {
+   "fieldname": "total_number_of_shares",
+   "fieldtype": "Data",
+   "label": "Total Number of Shares"
+  },
+  {
+   "fieldname": "share_capital_per_shareholder",
+   "fieldtype": "Data",
+   "label": "Share Capital per Shareholder"
+  },
+  {
+   "fieldname": "tab_4_tab",
+   "fieldtype": "Tab Break",
+   "label": "Business Activities"
+  },
+  {
+   "fieldname": "activities_section",
+   "fieldtype": "Section Break",
+   "label": "Activities"
+  },
+  {
+   "fieldname": "company_will_be_using_the_general_trading_activity_only",
+   "fieldtype": "Data",
+   "label": "Company will be using the \"General Trading Activity\" only"
+  },
+  {
+   "fieldname": "please_select_up_to_3_business_activities",
+   "fieldtype": "Data",
+   "label": "Please select up to 3 Business Activities"
+  },
+  {
+   "bold": 1,
+   "fieldname": "add_company_members_tab",
+   "fieldtype": "Tab Break",
+   "label": "Add Company Members"
+  },
+  {
+   "fieldname": "company_members_section",
+   "fieldtype": "Section Break",
+   "label": "Company Members"
+  },
+  {
+   "fieldname": "role__1st_member",
+   "fieldtype": "Select",
+   "label": "Role _1st Member",
+   "options": "General Manager\nShareholder\nSecretary\nDirector"
+  },
+  {
+   "fieldname": "name__1st_member",
+   "fieldtype": "Data",
+   "label": "Name _1st Member"
+  },
+  {
+   "fieldname": "numbers_of_shares_1st_members",
+   "fieldtype": "Data",
+   "label": "Numbers of Shares_1st members"
+  },
+  {
+   "fieldname": "gender__1st_member",
+   "fieldtype": "Data",
+   "label": "Gender _1st Member"
+  },
+  {
+   "fieldname": "column_break_xiwm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email__1st_member",
+   "fieldtype": "Data",
+   "label": "Email _1st Member"
+  },
+  {
+   "fieldname": "mobile_phone__1st_company_member",
+   "fieldtype": "Int",
+   "label": "Mobile Phone _1st Company Member"
+  },
+  {
+   "fieldname": "date_of_birth___1st_member",
+   "fieldtype": "Data",
+   "label": "Date of Birth  _1st Member"
+  },
+  {
+   "fieldname": "passport_number___1st_member",
+   "fieldtype": "Data",
+   "label": "Passport Number _ 1st Member"
+  },
+  {
+   "fieldname": "passport_issue_date__1st_member",
+   "fieldtype": "Date",
+   "label": "Passport Issue Date _1st Member"
+  },
+  {
+   "fieldname": "passport_expiry_date__1st_member",
+   "fieldtype": "Date",
+   "label": "Passport Expiry Date _1st Member"
+  },
+  {
+   "fieldname": "column_break_u2pq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passport_country_of_issue__1st_member",
+   "fieldtype": "Data",
+   "label": "Passport Country of Issue _1st Member"
+  },
+  {
+   "fieldname": "passport_place_of_issue__1st_member",
+   "fieldtype": "Data",
+   "label": "Passport Place of Issue _1st Member"
+  },
+  {
+   "fieldname": "nationality__1st_member",
+   "fieldtype": "Data",
+   "label": "Nationality _1st Member"
+  },
+  {
+   "fieldname": "are_you_uae_resident___1st_member",
+   "fieldtype": "Data",
+   "label": "Are you UAE Resident  _1st Member"
+  },
+  {
+   "fieldname": "resident__member_1",
+   "fieldtype": "Data",
+   "label": "Resident _Member 1"
+  },
+  {
+   "fieldname": "eid_number",
+   "fieldtype": "Data",
+   "label": "EID Number"
+  },
+  {
+   "fieldname": "full_address__1st_member_private_address",
+   "fieldtype": "Text",
+   "label": "Full Address _1st Member (Private Address)"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "add_2nd_member",
+   "fieldtype": "Select",
+   "label": "Add 2nd member",
+   "options": "YES\nNO"
+  },
+  {
+   "bold": 1,
+   "fieldname": "ultimate_benificial_ownership_tab",
+   "fieldtype": "Tab Break",
+   "label": "Ultimate Benificial Ownership"
+  },
+  {
+   "fieldname": "ownership_section",
+   "fieldtype": "Section Break",
+   "label": "Ownership"
+  },
+  {
+   "fieldname": "the_company_agrees_to_the_statement_below",
+   "fieldtype": "Select",
+   "label": "The company agrees to the statement below",
+   "options": "YES\nNO"
+  },
+  {
+   "fieldname": "if_61_no_add_ubo",
+   "fieldtype": "Data",
+   "label": "(If 6.1 NO) Add UBO"
+  },
+  {
+   "fieldname": "passport_expiry_date___1st_member",
+   "fieldtype": "Date",
+   "label": "Passport Expiry Date  _1st Member"
+  },
+  {
+   "fieldname": "general_managerauthorize_d_signatory_name",
+   "fieldtype": "Data",
+   "label": "General Manager/Authorize Signatory Name"
+  },
+  {
+   "fieldname": "general_managerauthorize_d_signatory_email",
+   "fieldtype": "Data",
+   "label": "General Manager/Authorize Signatory Email"
+  },
+  {
+   "fieldname": "column_break_iysi",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [],
+ "modified": "2024-02-24 17:17:35.283422",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "ifza copy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

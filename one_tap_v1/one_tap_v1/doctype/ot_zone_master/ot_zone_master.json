@@ -1,0 +1,678 @@
+{
+    "actions": [],
+    "allow_import": 1,
+    "allow_rename": 1,
+    "autoname": "field:zone_name",
+    "creation": "2024-02-07 13:18:09.497480",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+     "zone_code",
+     "zone_type",
+     "column_break_brhc",
+     "zone_name",
+     "state_name",
+     "is_active",
+     "no_of_activities_included",
+     "zone_trade_license_pricing_tab",
+     "visayear_price_section",
+     "0visa_1year",
+     "1visa_1year",
+     "2visa_1year",
+     "3visa_1year",
+     "4visa_1year",
+     "column_break_pjlg",
+     "disc_price_0v_1y",
+     "disc_price_1v_1y",
+     "disc_price_2v_1y",
+     "disc_price_3v_1y",
+     "disc_price_4v_1y",
+     "column_break_rmdk",
+     "0visa_2year",
+     "1visa_2year",
+     "2visa_2year",
+     "3visa_2year",
+     "4visa_2year",
+     "column_break_qtwd",
+     "disc_price_0v_2y",
+     "disc_price_1v_2y",
+     "disc_price_2v_2y",
+     "disc_price_3v_2y",
+     "disc_price_4v_2y",
+     "column_break_svij",
+     "0visa_3year",
+     "1visa_3year",
+     "2visa_3year",
+     "3visa_3year",
+     "4visa_3year",
+     "column_break_upny",
+     "disc_price_0v_3y",
+     "disc_price_1v_3y",
+     "disc_price_2v_3y",
+     "disc_price_3v_3y",
+     "disc_price_4v_3y",
+     "section_break_zanq",
+     "column_break_xdef",
+     "0visa_4year",
+     "1visa_4year",
+     "2visa_4year",
+     "3visa_4year",
+     "4visa_4year",
+     "column_break_jpph",
+     "disc_price_0v_4y",
+     "disc_price_1v_4y",
+     "disc_price_2v_4y",
+     "disc_price_3v_4y",
+     "disc_price_4v_4y",
+     "column_break_prcg",
+     "0visa_5year",
+     "1visa_5year",
+     "2visa_5year",
+     "3visa_5year",
+     "4visa_5year",
+     "column_break_itun",
+     "disc_price_0v_5y",
+     "disc_price_1v_5y",
+     "disc_price_2v_5y",
+     "disc_price_3v_5y",
+     "disc_price_4v_5y",
+     "general_trade_activity_pricing_tab",
+     "section_break_nqix",
+     "0visa_1year_gt",
+     "1visa_1year_gt",
+     "2visa_1year_gt",
+     "3visa_1year_gt",
+     "4visa_1year_gt",
+     "column_break_jfad",
+     "0visa_2year_gt",
+     "1visa_2year_gt",
+     "2visa_2year_gt",
+     "3visa_2year_gt",
+     "4visa_2year_gt",
+     "column_break_htgl",
+     "0visa_3year_gt",
+     "1visa_3year_gt",
+     "2visa_3year_gt",
+     "3visa_3year_gt",
+     "4visa_3year_gt",
+     "column_break_yodb",
+     "0visa_4year_gt",
+     "1visa_4year_gt",
+     "2visa_4year_gt",
+     "3visa_4year_gt",
+     "4visa_4year_gt",
+     "column_break_clrl",
+     "0visa_5year_gt",
+     "1visa_5year_gt",
+     "2visa_5year_gt",
+     "3visa_5year_gt",
+     "4visa_5year_gt",
+     "pros_and_cons_tab",
+     "pros_section",
+     "pros",
+     "cons_section",
+     "cons",
+     "documents_tab",
+     "documents_required_section",
+     "documents_required"
+    ],
+    "fields": [
+     {
+      "fieldname": "zone_code",
+      "fieldtype": "Data",
+      "label": "Zone Code"
+     },
+     {
+      "fieldname": "zone_name",
+      "fieldtype": "Data",
+      "label": "Zone Name",
+      "unique": 1
+     },
+     {
+      "fieldname": "zone_type",
+      "fieldtype": "Link",
+      "label": "Zone Type",
+      "options": "OT Zone Type"
+     },
+     {
+      "fieldname": "state_name",
+      "fieldtype": "Link",
+      "label": "State Name",
+      "options": "OT State Master"
+     },
+     {
+      "default": "0",
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Is Active"
+     },
+     {
+      "fieldname": "zone_trade_license_pricing_tab",
+      "fieldtype": "Tab Break",
+      "label": "Regular Trade Activity Pricing"
+     },
+     {
+      "fieldname": "0visa_1year",
+      "fieldtype": "Data",
+      "label": "0Visa_1Year"
+     },
+     {
+      "fieldname": "1visa_1year",
+      "fieldtype": "Data",
+      "label": "1Visa_1Year"
+     },
+     {
+      "fieldname": "2visa_1year",
+      "fieldtype": "Data",
+      "label": "2Visa_1Year"
+     },
+     {
+      "fieldname": "3visa_1year",
+      "fieldtype": "Data",
+      "label": "3Visa_1Year"
+     },
+     {
+      "fieldname": "4visa_1year",
+      "fieldtype": "Data",
+      "label": "4Visa_1Year"
+     },
+     {
+      "fieldname": "column_break_qtwd",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "0visa_2year",
+      "fieldtype": "Data",
+      "label": "0Visa_2Year"
+     },
+     {
+      "fieldname": "1visa_2year",
+      "fieldtype": "Data",
+      "label": "1Visa_2Year"
+     },
+     {
+      "fieldname": "2visa_2year",
+      "fieldtype": "Data",
+      "label": "2Visa_2Year"
+     },
+     {
+      "fieldname": "3visa_2year",
+      "fieldtype": "Data",
+      "label": "3Visa_2Year"
+     },
+     {
+      "fieldname": "4visa_2year",
+      "fieldtype": "Data",
+      "label": "4Visa_2Year"
+     },
+     {
+      "fieldname": "column_break_svij",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "0visa_3year",
+      "fieldtype": "Data",
+      "label": "0Visa_3Year"
+     },
+     {
+      "fieldname": "1visa_3year",
+      "fieldtype": "Data",
+      "label": "1Visa_3Year"
+     },
+     {
+      "fieldname": "2visa_3year",
+      "fieldtype": "Data",
+      "label": "2Visa_3Year"
+     },
+     {
+      "fieldname": "3visa_3year",
+      "fieldtype": "Data",
+      "label": "3Visa_3Year"
+     },
+     {
+      "fieldname": "4visa_3year",
+      "fieldtype": "Data",
+      "label": "4Visa_3Year"
+     },
+     {
+      "fieldname": "column_break_xdef",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "0visa_4year",
+      "fieldtype": "Data",
+      "label": "0Visa_4Year"
+     },
+     {
+      "fieldname": "1visa_4year",
+      "fieldtype": "Data",
+      "label": "1Visa_4Year"
+     },
+     {
+      "fieldname": "2visa_4year",
+      "fieldtype": "Data",
+      "label": "2Visa_4Year"
+     },
+     {
+      "fieldname": "3visa_4year",
+      "fieldtype": "Data",
+      "label": "3Visa_4Year"
+     },
+     {
+      "fieldname": "4visa_4year",
+      "fieldtype": "Data",
+      "label": "4Visa_4Year"
+     },
+     {
+      "fieldname": "column_break_prcg",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "0visa_5year",
+      "fieldtype": "Data",
+      "label": "0Visa_5Year"
+     },
+     {
+      "fieldname": "1visa_5year",
+      "fieldtype": "Data",
+      "label": "1Visa_5Year"
+     },
+     {
+      "fieldname": "2visa_5year",
+      "fieldtype": "Data",
+      "label": "2Visa_5Year"
+     },
+     {
+      "fieldname": "3visa_5year",
+      "fieldtype": "Data",
+      "label": "3Visa_5Year"
+     },
+     {
+      "fieldname": "4visa_5year",
+      "fieldtype": "Data",
+      "label": "4Visa_5Year"
+     },
+     {
+      "fieldname": "visayear_price_section",
+      "fieldtype": "Section Break",
+      "label": "Normal Activity Pricing"
+     },
+     {
+      "fieldname": "column_break_brhc",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "section_break_nqix",
+      "fieldtype": "Section Break",
+      "label": "General Trading Activity Pricing"
+     },
+     {
+      "fieldname": "0visa_1year_gt",
+      "fieldtype": "Data",
+      "label": "0Visa_1Year"
+     },
+     {
+      "fieldname": "column_break_jfad",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "0visa_2year_gt",
+      "fieldtype": "Data",
+      "label": "0Visa_2Year"
+     },
+     {
+      "fieldname": "column_break_htgl",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "0visa_3year_gt",
+      "fieldtype": "Data",
+      "label": "0Visa_3Year"
+     },
+     {
+      "fieldname": "column_break_yodb",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "0visa_4year_gt",
+      "fieldtype": "Data",
+      "label": "0Visa_4Year"
+     },
+     {
+      "fieldname": "column_break_clrl",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "0visa_5year_gt",
+      "fieldtype": "Data",
+      "label": "0Visa_5Year"
+     },
+     {
+      "fieldname": "1visa_1year_gt",
+      "fieldtype": "Data",
+      "label": "1Visa_1Year"
+     },
+     {
+      "fieldname": "2visa_1year_gt",
+      "fieldtype": "Data",
+      "label": "2Visa_1Year"
+     },
+     {
+      "fieldname": "3visa_1year_gt",
+      "fieldtype": "Data",
+      "label": "3Visa_1Year"
+     },
+     {
+      "fieldname": "4visa_1year_gt",
+      "fieldtype": "Data",
+      "label": "4Visa_1Year"
+     },
+     {
+      "fieldname": "1visa_2year_gt",
+      "fieldtype": "Data",
+      "label": "1visa_2year"
+     },
+     {
+      "fieldname": "2visa_2year_gt",
+      "fieldtype": "Data",
+      "label": "2visa_2year"
+     },
+     {
+      "fieldname": "3visa_2year_gt",
+      "fieldtype": "Data",
+      "label": "3visa_2year_gt"
+     },
+     {
+      "fieldname": "4visa_2year_gt",
+      "fieldtype": "Data",
+      "label": "4visa_2year"
+     },
+     {
+      "fieldname": "1visa_3year_gt",
+      "fieldtype": "Data",
+      "label": "1visa_3year"
+     },
+     {
+      "fieldname": "2visa_3year_gt",
+      "fieldtype": "Data",
+      "label": "2visa_3year"
+     },
+     {
+      "fieldname": "3visa_3year_gt",
+      "fieldtype": "Data",
+      "label": "3visa_3year"
+     },
+     {
+      "fieldname": "4visa_3year_gt",
+      "fieldtype": "Data",
+      "label": "4visa_3year"
+     },
+     {
+      "fieldname": "1visa_4year_gt",
+      "fieldtype": "Data",
+      "label": "1visa_4year"
+     },
+     {
+      "fieldname": "2visa_4year_gt",
+      "fieldtype": "Data",
+      "label": "2visa_4year"
+     },
+     {
+      "fieldname": "3visa_4year_gt",
+      "fieldtype": "Data",
+      "label": "3visa_4year"
+     },
+     {
+      "fieldname": "4visa_4year_gt",
+      "fieldtype": "Data",
+      "label": "4visa_4year"
+     },
+     {
+      "fieldname": "1visa_5year_gt",
+      "fieldtype": "Data",
+      "label": "1visa_5year"
+     },
+     {
+      "fieldname": "2visa_5year_gt",
+      "fieldtype": "Data",
+      "label": "2visa_5year"
+     },
+     {
+      "fieldname": "3visa_5year_gt",
+      "fieldtype": "Data",
+      "label": "3visa_5year"
+     },
+     {
+      "fieldname": "4visa_5year_gt",
+      "fieldtype": "Data",
+      "label": "4visa_5year"
+     },
+     {
+      "fieldname": "general_trade_activity_pricing_tab",
+      "fieldtype": "Tab Break",
+      "label": "General Trade Activity Pricing"
+     },
+     {
+      "fieldname": "pros_and_cons_tab",
+      "fieldtype": "Tab Break",
+      "label": "Pros and Cons"
+     },
+     {
+      "fieldname": "pros_section",
+      "fieldtype": "Section Break",
+      "label": "Pros "
+     },
+     {
+      "fieldname": "pros",
+      "fieldtype": "Long Text",
+      "label": "Pros"
+     },
+     {
+      "fieldname": "cons_section",
+      "fieldtype": "Section Break",
+      "label": "Cons"
+     },
+     {
+      "fieldname": "cons",
+      "fieldtype": "Long Text",
+      "label": "Cons"
+     },
+     {
+      "fieldname": "documents_tab",
+      "fieldtype": "Tab Break",
+      "label": "Documents"
+     },
+     {
+      "fieldname": "documents_required_section",
+      "fieldtype": "Section Break",
+      "label": "Documents Required"
+     },
+     {
+      "fieldname": "documents_required",
+      "fieldtype": "Long Text",
+      "label": "Documents Required"
+     },
+     {
+      "fieldname": "column_break_pjlg",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "disc_price_0v_1y",
+      "fieldtype": "Int",
+      "label": "Disc_Price_0V_1Y"
+     },
+     {
+      "fieldname": "disc_price_1v_1y",
+      "fieldtype": "Int",
+      "label": "Disc_Price_1V_1Y"
+     },
+     {
+      "fieldname": "disc_price_2v_1y",
+      "fieldtype": "Int",
+      "label": "Disc_Price_2V_1Y"
+     },
+     {
+      "fieldname": "disc_price_3v_1y",
+      "fieldtype": "Int",
+      "label": "Disc_Price_3V_1Y"
+     },
+     {
+      "fieldname": "disc_price_4v_1y",
+      "fieldtype": "Int",
+      "label": "Disc_Price_4V_1Y"
+     },
+     {
+      "fieldname": "column_break_rmdk",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "disc_price_0v_2y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_0V_2Y"
+     },
+     {
+      "fieldname": "disc_price_1v_2y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_1V_2Y "
+     },
+     {
+      "fieldname": "disc_price_2v_2y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_2V_2Y"
+     },
+     {
+      "fieldname": "disc_price_3v_2y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_3V_2Y"
+     },
+     {
+      "fieldname": "disc_price_4v_2y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_4V_2Y"
+     },
+     {
+      "fieldname": "column_break_upny",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "disc_price_0v_3y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_0V_3Y"
+     },
+     {
+      "fieldname": "disc_price_1v_3y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_1V_3Y"
+     },
+     {
+      "fieldname": "disc_price_2v_3y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_2V_3Y"
+     },
+     {
+      "fieldname": "disc_price_3v_3y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_3V_3Y"
+     },
+     {
+      "fieldname": "disc_price_4v_3y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_4V_3Y"
+     },
+     {
+      "fieldname": "section_break_zanq",
+      "fieldtype": "Section Break"
+     },
+     {
+      "fieldname": "column_break_jpph",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "disc_price_0v_4y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_0V_4Y"
+     },
+     {
+      "fieldname": "disc_price_1v_4y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_1V_4Y"
+     },
+     {
+      "fieldname": "disc_price_2v_4y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_2V_4Y"
+     },
+     {
+      "fieldname": "disc_price_3v_4y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_3V_4Y"
+     },
+     {
+      "fieldname": "disc_price_4v_4y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_4V_4Y"
+     },
+     {
+      "fieldname": "column_break_itun",
+      "fieldtype": "Column Break"
+     },
+     {
+      "fieldname": "disc_price_0v_5y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_0V_5Y"
+     },
+     {
+      "fieldname": "disc_price_1v_5y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_1V_5Y"
+     },
+     {
+      "fieldname": "disc_price_2v_5y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_2V_5Y"
+     },
+     {
+      "fieldname": "disc_price_3v_5y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_3V_5Y"
+     },
+     {
+      "fieldname": "disc_price_4v_5y",
+      "fieldtype": "Data",
+      "label": "Disc_Price_4V_5Y"
+     },
+     {
+      "fieldname": "no_of_activities_included",
+      "fieldtype": "Int",
+      "label": "No of activities included"
+     }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2024-03-18 16:20:21.655881",
+    "modified_by": "Administrator",
+    "module": "one_tap_v1",
+    "name": "OT Zone Master",
+    "naming_rule": "By fieldname",
+    "owner": "Administrator",
+    "permissions": [
+     {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+     }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1,
+    "track_seen": 1,
+    "track_views": 1
+   }

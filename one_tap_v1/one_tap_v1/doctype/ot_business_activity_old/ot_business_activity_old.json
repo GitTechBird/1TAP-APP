@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:activity_name",
+ "creation": "2024-02-09 13:07:35.154296",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_name",
+  "activity_id",
+  "activity_group",
+  "activity_group_id",
+  "activity_price",
+  "business_zone"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Data",
+   "label": "Activity Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "activity_id",
+   "fieldtype": "Int",
+   "label": "Activity Id"
+  },
+  {
+   "fieldname": "activity_group_id",
+   "fieldtype": "Int",
+   "label": "Activity Group Id"
+  },
+  {
+   "fieldname": "activity_group",
+   "fieldtype": "Data",
+   "label": "Activity Group"
+  },
+  {
+   "fieldname": "activity_price",
+   "fieldtype": "Float",
+   "label": "Activity Price"
+  },
+  {
+   "fieldname": "business_zone",
+   "fieldtype": "Data",
+   "label": "Business Zone"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-09 15:50:57.251991",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "OT Business Activity Old",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

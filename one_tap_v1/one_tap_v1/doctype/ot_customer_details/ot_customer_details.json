@@ -1,0 +1,343 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-19 15:06:49.054030",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "user_email",
+  "iscustomer",
+  "payment_details_tab",
+  "payment_type",
+  "service_purchased_details_tab",
+  "item_code",
+  "project_id",
+  "service_type",
+  "company_setup_tab",
+  "task_1_section",
+  "country_of_operation",
+  "franchise_or_branch",
+  "proposed_company_name_1",
+  "proposed_company_name_2",
+  "proposed_company_name_3",
+  "column_break_liog",
+  "issued_company_name",
+  "task_2_section",
+  "license_type",
+  "license_years",
+  "no_of_visa_eligibilty",
+  "column_break_gsa7",
+  "license_zone",
+  "no_of_business_activities_eligible",
+  "business_activities_suggested",
+  "task_3_section",
+  "share_holding_type",
+  "number_of_sharholders",
+  "proposed_share_capital",
+  "proposed_share_value",
+  "total_number_of_shares",
+  "share_capital_per_shareholder",
+  "column_break_gqvh",
+  "share_holders_details",
+  "task_4_section",
+  "ubo_declaration",
+  "general_manage_name",
+  "general_manager_authorized_signatory",
+  "task_5_section",
+  "consent_form",
+  "cusotmer_search_details_tab",
+  "customer__search_inputs_section",
+  "customer_country_of_residence",
+  "column_break_u9lo",
+  "business_description",
+  "business_activities",
+  "number_of_visas"
+ ],
+ "fields": [
+  {
+   "fieldname": "payment_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Data",
+   "label": "Payment Type"
+  },
+  {
+   "fieldname": "service_purchased_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Service Purchased Details"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "company_setup_tab",
+   "fieldtype": "Tab Break",
+   "label": "Company Setup"
+  },
+  {
+   "fieldname": "task_1_section",
+   "fieldtype": "Section Break",
+   "label": "Task 1"
+  },
+  {
+   "fieldname": "country_of_operation",
+   "fieldtype": "Link",
+   "label": "Country of operation",
+   "options": "Country"
+  },
+  {
+   "fieldname": "franchise_or_branch",
+   "fieldtype": "Data",
+   "label": "Franchise or Branch"
+  },
+  {
+   "fieldname": "proposed_company_name_1",
+   "fieldtype": "Data",
+   "label": "Proposed Company Name 1"
+  },
+  {
+   "fieldname": "proposed_company_name_2",
+   "fieldtype": "Data",
+   "label": "Proposed Company Name 2"
+  },
+  {
+   "fieldname": "proposed_company_name_3",
+   "fieldtype": "Data",
+   "label": "Proposed Company Name 3"
+  },
+  {
+   "fieldname": "column_break_liog",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "issued_company_name",
+   "fieldtype": "Data",
+   "label": "Issued Company Name"
+  },
+  {
+   "fieldname": "task_2_section",
+   "fieldtype": "Section Break",
+   "label": "Task 2"
+  },
+  {
+   "fieldname": "license_type",
+   "fieldtype": "Select",
+   "label": "License Type",
+   "options": "Commercial(Includes Trade)\nProfessional(Include Service & Consultancy)\nCombination(Additional Charges may apply)"
+  },
+  {
+   "fieldname": "license_years",
+   "fieldtype": "Data",
+   "label": "License Years"
+  },
+  {
+   "fieldname": "no_of_visa_eligibilty",
+   "fieldtype": "Data",
+   "label": "No of Visa Eligibilty"
+  },
+  {
+   "fieldname": "column_break_gsa7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "license_zone",
+   "fieldtype": "Link",
+   "label": "License Zone",
+   "options": "OT Zone Master"
+  },
+  {
+   "fieldname": "no_of_business_activities_eligible",
+   "fieldtype": "Data",
+   "label": "No of Business Activities Eligible"
+  },
+  {
+   "fieldname": "business_activities_suggested",
+   "fieldtype": "Table",
+   "label": "Business activities suggested",
+   "options": "OT Link Business Activity"
+  },
+  {
+   "fieldname": "task_3_section",
+   "fieldtype": "Section Break",
+   "label": "Task 3"
+  },
+  {
+   "fieldname": "share_holding_type",
+   "fieldtype": "Data",
+   "label": "Share Holding Type"
+  },
+  {
+   "fieldname": "number_of_sharholders",
+   "fieldtype": "Data",
+   "label": "Number of sharholders"
+  },
+  {
+   "fieldname": "proposed_share_capital",
+   "fieldtype": "Data",
+   "label": "Proposed Share Capital"
+  },
+  {
+   "fieldname": "proposed_share_value",
+   "fieldtype": "Data",
+   "label": "Proposed Share Value"
+  },
+  {
+   "fieldname": "total_number_of_shares",
+   "fieldtype": "Data",
+   "label": "Total Number of Shares"
+  },
+  {
+   "fieldname": "share_capital_per_shareholder",
+   "fieldtype": "Data",
+   "label": "Share capital per shareholder"
+  },
+  {
+   "fieldname": "column_break_gqvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "task_4_section",
+   "fieldtype": "Section Break",
+   "label": "Task 4"
+  },
+  {
+   "default": "0",
+   "fieldname": "ubo_declaration",
+   "fieldtype": "Check",
+   "label": "UBO Declaration"
+  },
+  {
+   "fieldname": "general_manage_name",
+   "fieldtype": "Data",
+   "label": "General Manage Name"
+  },
+  {
+   "fieldname": "general_manager_authorized_signatory",
+   "fieldtype": "Data",
+   "label": "General Manager Authorized Signatory"
+  },
+  {
+   "fieldname": "task_5_section",
+   "fieldtype": "Section Break",
+   "label": "Task 5"
+  },
+  {
+   "fieldname": "consent_form",
+   "fieldtype": "Data",
+   "label": "Consent Form"
+  },
+  {
+   "fieldname": "cusotmer_search_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Cusotmer Search Details"
+  },
+  {
+   "fieldname": "customer__search_inputs_section",
+   "fieldtype": "Section Break",
+   "label": "Customer  Search Inputs"
+  },
+  {
+   "fieldname": "customer_country_of_residence",
+   "fieldtype": "Data",
+   "label": "Customer country of Residence"
+  },
+  {
+   "fieldname": "column_break_u9lo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_description",
+   "fieldtype": "Data",
+   "label": "Business description"
+  },
+  {
+   "fieldname": "business_activities",
+   "fieldtype": "Data",
+   "label": "Business Activities"
+  },
+  {
+   "fieldname": "number_of_visas",
+   "fieldtype": "Data",
+   "label": "Number of Visas"
+  },
+  {
+   "fieldname": "share_holders_details",
+   "fieldtype": "Table",
+   "label": "Share Holders Details",
+   "options": "OT Company Shareholders 1"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "user_email",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Email",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "iscustomer",
+   "fieldtype": "Check",
+   "label": "Is Customer"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Id",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Id",
+   "options": "Project"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Type",
+   "options": "OT Service Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-24 14:01:44.864683",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "OT Customer Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

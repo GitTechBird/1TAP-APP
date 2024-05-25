@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MSGID-{messanger_id}-{##########}",
+ "creation": "2024-04-02 15:08:05.080834",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "messanger_id",
+  "subject",
+  "json_data",
+  "message_by",
+  "column_break_rsnv",
+  "message_type",
+  "text",
+  "file",
+  "image_width",
+  "image_height",
+  "message_time",
+  "section_break_geyn",
+  "agent_id",
+  "support_team"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "messanger_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Messanger ID",
+   "not_nullable": 1,
+   "options": "IM Messangers",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "json_data",
+   "fieldtype": "JSON",
+   "label": "Json Data"
+  },
+  {
+   "fieldname": "column_break_rsnv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message_type",
+   "fieldtype": "Select",
+   "label": "Message Type",
+   "options": "Text\nImage\nVideo\nFile"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Long Text",
+   "label": "Text"
+  },
+  {
+   "fieldname": "file",
+   "fieldtype": "Attach",
+   "label": "File"
+  },
+  {
+   "fieldname": "image_width",
+   "fieldtype": "Data",
+   "label": "Image width"
+  },
+  {
+   "fieldname": "image_height",
+   "fieldtype": "Data",
+   "label": "Image Height"
+  },
+  {
+   "fieldname": "message_time",
+   "fieldtype": "Datetime",
+   "label": "Message Time"
+  },
+  {
+   "fieldname": "section_break_geyn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agent_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Agent ID",
+   "options": "HD Agent"
+  },
+  {
+   "fieldname": "support_team",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Support HD Team",
+   "options": "HD Team"
+  },
+  {
+   "fieldname": "message_by",
+   "fieldtype": "Select",
+   "label": "Message By",
+   "options": "Customer\nAgent\nBot"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-03 16:52:44.332096",
+ "modified_by": "Administrator",
+ "module": "one_tap_IM",
+ "name": "IM Communications",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

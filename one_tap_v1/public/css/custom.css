@@ -1,0 +1,71 @@
+.widget {
+	/* background-color: #ffc107; */
+}
+
+
+
+/* CSS for Navbar */
+.navbar {
+	/* background: #2b6cb0; */
+}
+
+/* Testing to hide nav bar */
+/* .page-head , .navbar{
+	display: none;
+} */
+
+a {
+	/* color : #fff */
+}
+
+
+
+/* Custom Scrollbar properties */
+body, .main-section {
+	/* scrollbar-width: none;
+	scrollbar-color: #fff */
+}
+#body,.main-section {
+	/* scrollbar-color: #c7c7c700 #ededed00;
+	overflow: hidden; */
+    /* scrollbar-width: thin; */
+    /* "auto" or "thin" */
+    /* scrollbar-color: #fff; */
+    /* scroll thumb and track */
+}
+
+
+* {
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: #fff */
+}
+
+/* Works on Chrome, Edge, and Safari */
+/* *::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fff;
+} */
+
+/* *::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 3px solid orange;
+} */
+
+
+* {
+    /* scrollbar-width: thin;
+    scrollbar-color: #f8f4f4 #f8f4f4; */
+}
+
+*, ::before, ::after {
+   /* overflow: hidden; */
+}
+
+element.style {
+    /* color-scheme: light; */
+    /* overflow-y: hidden; */
+}

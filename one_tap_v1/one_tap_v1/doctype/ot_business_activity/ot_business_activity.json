@@ -1,0 +1,264 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-02-12 12:51:00.275963",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tywq",
+  "business_activity_code",
+  "business_activity_master_id",
+  "business_activity_master_number",
+  "is_active",
+  "column_break_evzy",
+  "business_activity_name",
+  "business_activity_group_name",
+  "business_category",
+  "business_classification",
+  "activity_description_section",
+  "business_activity_description",
+  "activity_zone_and_type_section",
+  "service_type",
+  "business_zone",
+  "activity_additional_info_tab",
+  "minimum_share_capital",
+  "risk_classification",
+  "column_break_gplv",
+  "property_type",
+  "license_type",
+  "actvity_item_and_price_tab",
+  "activity_item_details_section",
+  "item_dependant_on",
+  "activity_additional_price",
+  "item_generated_code",
+  "is_special",
+  "column_break_7agh",
+  "activity_item_attributes",
+  "approvals_and_docs_required_tab",
+  "document_required_section",
+  "third_party_noc",
+  "approval_requirement",
+  "approving_entity",
+  "approval_classification",
+  "column_break_sac1",
+  "documents_required"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tywq",
+   "fieldtype": "Section Break",
+   "label": "Activity Details"
+  },
+  {
+   "fieldname": "business_activity_code",
+   "fieldtype": "Data",
+   "label": "Business Activity Code"
+  },
+  {
+   "fieldname": "business_activity_master_id",
+   "fieldtype": "Data",
+   "label": "Business Activity Master ID"
+  },
+  {
+   "fieldname": "business_activity_master_number",
+   "fieldtype": "Data",
+   "label": "Business Activity Master Number"
+  },
+  {
+   "fieldname": "business_activity_name",
+   "fieldtype": "Data",
+   "label": "Business Activity Name"
+  },
+  {
+   "fieldname": "column_break_evzy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "business_activity_group_name",
+   "fieldtype": "Data",
+   "label": "Business Activity Group Name"
+  },
+  {
+   "fieldname": "business_category",
+   "fieldtype": "Data",
+   "label": "Business Category "
+  },
+  {
+   "fieldname": "business_classification",
+   "fieldtype": "Select",
+   "label": "Business Classification",
+   "options": "Regulated\nNon-Regulated"
+  },
+  {
+   "fieldname": "activity_description_section",
+   "fieldtype": "Section Break",
+   "label": "Activity Description"
+  },
+  {
+   "fieldname": "service_type",
+   "fieldtype": "Data",
+   "label": "Service Type"
+  },
+  {
+   "fieldname": "business_zone",
+   "fieldtype": "Link",
+   "label": "Business Zone",
+   "options": "OT Zone Master"
+  },
+  {
+   "fieldname": "activity_additional_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Activity Additional Info"
+  },
+  {
+   "fieldname": "minimum_share_capital",
+   "fieldtype": "Data",
+   "label": "Minimum Share Capital"
+  },
+  {
+   "fieldname": "risk_classification",
+   "fieldtype": "Select",
+   "label": "Risk Classification",
+   "options": "None\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "column_break_gplv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Data",
+   "label": "Property Type"
+  },
+  {
+   "fieldname": "license_type",
+   "fieldtype": "Data",
+   "label": "License Type"
+  },
+  {
+   "fieldname": "actvity_item_and_price_tab",
+   "fieldtype": "Tab Break",
+   "label": "Actvity Item and Price"
+  },
+  {
+   "fieldname": "activity_item_details_section",
+   "fieldtype": "Section Break",
+   "label": "Activity Item Details"
+  },
+  {
+   "fieldname": "item_dependant_on",
+   "fieldtype": "Select",
+   "label": "Item Dependant on",
+   "options": "Activity Group\nActivity Name"
+  },
+  {
+   "fieldname": "activity_additional_price",
+   "fieldtype": "Data",
+   "label": "Activity Additional Price"
+  },
+  {
+   "fieldname": "item_generated_code",
+   "fieldtype": "Data",
+   "label": "Item Generated Code"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_special",
+   "fieldtype": "Check",
+   "label": "is special"
+  },
+  {
+   "fieldname": "column_break_7agh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activity_item_attributes",
+   "fieldtype": "Table",
+   "label": "Activity Item Attributes",
+   "options": "OT Item Attribute Link"
+  },
+  {
+   "fieldname": "approvals_and_docs_required_tab",
+   "fieldtype": "Tab Break",
+   "label": "Approvals and Docs Required"
+  },
+  {
+   "fieldname": "document_required_section",
+   "fieldtype": "Section Break",
+   "label": "Document required"
+  },
+  {
+   "fieldname": "third_party_noc",
+   "fieldtype": "Data",
+   "label": "Third Party NOC"
+  },
+  {
+   "fieldname": "approval_requirement",
+   "fieldtype": "Data",
+   "label": "Approval Requirement"
+  },
+  {
+   "fieldname": "approving_entity",
+   "fieldtype": "Data",
+   "label": "Approving Entity"
+  },
+  {
+   "fieldname": "column_break_sac1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "documents_required",
+   "fieldtype": "Text",
+   "label": "Documents Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "business_activity_description",
+   "fieldtype": "Long Text",
+   "label": "Business Activity Description"
+  },
+  {
+   "fieldname": "activity_zone_and_type_section",
+   "fieldtype": "Section Break",
+   "label": "Activity Zone and Type"
+  },
+  {
+   "fieldname": "approval_classification",
+   "fieldtype": "Data",
+   "label": "Approval Classification"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-08 17:28:20.613372",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "OT Business Activity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

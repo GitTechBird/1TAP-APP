@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-24 10:48:59.271564",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sno_section",
+  "data_sjpm",
+  "field"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "sno_section",
+   "fieldtype": "Section Break",
+   "label": "S.no.",
+   "search_index": 1
+  },
+  {
+   "fieldname": "data_sjpm",
+   "fieldtype": "Data"
+  },
+  {
+   "bold": 1,
+   "fieldname": "field",
+   "fieldtype": "Data",
+   "label": "Field",
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-24 10:51:52.431552",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "Company Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

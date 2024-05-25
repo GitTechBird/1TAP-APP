@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-10 15:33:41.629314",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "im_messanger_id",
+  "im_hd_ticket"
+ ],
+ "fields": [
+  {
+   "fieldname": "im_messanger_id",
+   "fieldtype": "Link",
+   "label": "IM Messanger Id",
+   "options": "IM Messangers"
+  },
+  {
+   "fieldname": "im_hd_ticket",
+   "fieldtype": "Link",
+   "label": "IM HD Ticket",
+   "options": "HD Ticket"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-10 15:47:36.628274",
+ "modified_by": "Administrator",
+ "module": "one_tap_v1",
+ "name": "IM Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,3 +1,4 @@
+# from one_tap_v1.helper.otp_helper import send_email_after_login
 app_name = "one_tap_v1"
 app_title = "one_tap_v1"
 app_publisher = "one_tap_v1"
@@ -8,6 +9,8 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+app_include_css = "/assets/one_tap_v1/css/custom.css"
+app_include_js = "/assets/one_tap_v1/js/custom_navbar_display.js"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/one_tap_v1/css/one_tap_v1.css"
@@ -120,7 +123,15 @@ app_license = "mit"
 
 # Document Events
 # ---------------
+
 # Hook on document methods and events
+# doc_events = {
+#     "OT Zone Master": {
+#         "on_change": "one_tap_v1.for_server_script.create_activity_items.after_save",
+#         # "validate": "one_tap_v1.for_server_script.create_activity_items",
+#         # "after_save": "my_app.module_name.file_name.after_save"
+#     }
+# }
 
 # doc_events = {
 # 	"*": {
@@ -128,7 +139,37 @@ app_license = "mit"
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	}
+
+# "MyDocType": {
+#         "before_save": "my_app.module_name.file_name.before_save",
+#         "after_save": "my_app.module_name.file_name.after_save"
+#     }
+
+# doc_events = {
+#     "OT Business Activity": {
+#          "after_save": "one_tap_v1.for_server_script.create_activity_items.after_save",
+#         # "validate": "one_tap_v1.for_server_script.create_activity_items",
+#         # "after_save": "my_app.module_name.file_name.after_save"
+#     }
 # }
+# your_app/hooks.py
+
+doc_events = {
+    "OT Zone Master": {
+        "after_insert": "one_tap_v1.one_tap_v1.doctype.ot_zone_master.ot_zone_master.Ot_zone_master_change",
+        "on_update": "one_tap_v1.one_tap_v1.doctype.ot_zone_master.ot_zone_master.Ot_zone_master_change",
+    }
+}
+
+
+
+# doc_events = {
+#     "OT Zone Master": {
+#         "on_change": "one_tap.onetap_app.doctype.ot_zone_master.ot_zone_master.ot_zone_master_on_change"
+        
+#     }
+# }
+
 
 # Scheduled Tasks
 # ---------------
@@ -226,4 +267,30 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+doc_events = {
+    "Ifza copy1": {
+        "validate": "one_tap_v1.web_form.ifza_copy1_webform1.validate_company"
+    }
+}
 
+# my_custom_validation.py  file
+# validate_company  function
+# "validate": "my_app.my_module.my_custom_validation.validate_company"
+website_route_rules = [
+    {'from_route': '/1tap-test/<path:app_path>', 'to_route': '1tap-test'},
+    {'from_route': '/service/<path:app_path>', 'to_route': 'service'},
+    {"from_route": '/home/<path:app_path>', "to_route": 'home'},
+    {"from_route": '/techhelpdesk/<path:app_path>', "to_route": 'techhelpdesk'},
+]
+
+# on_session_creation = "one_tap_v1.api2.send_email_after_login"
+# on_login = "one_tap_v1.api1.get_live_sessionn"
+
+# on_session_creation = [
+#     "one_tap_v1.api2.send_email_after_login",
+#     "one_tap_v1.api1.get_live_sessionn"
+# ]
+
+on_session_creation = [
+    "one_tap_v1.api3.handle_after_login"
+]
