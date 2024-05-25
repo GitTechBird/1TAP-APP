@@ -1,3 +1,6 @@
 [submodule "1TAP-REACT"]
 	path = 1TAP-REACT
 	url = https://github.com/GitTechBird/1TAP-REACT.git
+[submodule "techhelpdesk"]
+	path = techhelpdesk
+	url = https://github.com/GitTechBird/techhelpdesk.git
