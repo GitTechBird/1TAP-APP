@@ -5,15 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/assets/one_tap_v1/techhelpdesk/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1TAP- Help desk</title>
-    <script type="module" crossorigin src="/assets/one_tap_v1/techhelpdesk/assets/index-WsvXRdtG.js"></script>
+    <script type="module" crossorigin src="/assets/one_tap_v1/techhelpdesk/assets/index-C_hp6Tbp.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/one_tap_v1/techhelpdesk/assets/index-VwP_kt4S.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="im-root"></div>
 		<script>window.csrf_token = '{{ csrf_token }}';
       if (!window.frappe) window.frappe = {};
   
       frappe.boot = JSON.parse({{ boot }});
+    </script>
+    <script>
+      setTimeout(() => {
+        ImWidget.init();  
+      }, 3000);
+      
     </script>
   </body>
 </html>

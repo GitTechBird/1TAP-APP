@@ -270,7 +270,13 @@ doc_events = {
 doc_events = {
     "Ifza copy1": {
         "validate": "one_tap_v1.web_form.ifza_copy1_webform1.validate_company"
-    }
+    },
+    "OT Zone Master": {
+        "on_change": "one_tap_v1.one_tap_v1.doctype.ot_zone_master.ot_zone_master.update_item_price"
+    },
+    # "Item": {
+    #     "on_trash": "one_tap.onetap_app.doctype.ot_zone_master.ot_zone_master.delete_item_price"
+    # }
 }
 
 # my_custom_validation.py  file
@@ -291,6 +297,6 @@ website_route_rules = [
 #     "one_tap_v1.api1.get_live_sessionn"
 # ]
 
-on_session_creation = [
-    "one_tap_v1.api3.handle_after_login"
-]
+# on_session_creation = [
+#     "one_tap_v1.api3.handle_after_login"
+# ]

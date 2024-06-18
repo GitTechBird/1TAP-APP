@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-30 13:17:02.928305",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nqhg",
+  "label",
+  "instance_id",
+  "type",
+  "frappe_user",
+  "column_break_co10",
+  "frappe_user_password",
+  "mysql_password",
+  "admin_password",
+  "public_type",
+  "section_break_icbc",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nqhg",
+   "fieldtype": "Data",
+   "label": "account"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "label"
+  },
+  {
+   "fieldname": "instance_id",
+   "fieldtype": "Data",
+   "label": "Instance Id"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "public\nprivate"
+  },
+  {
+   "fieldname": "frappe_user",
+   "fieldtype": "Data",
+   "label": "Frappe user"
+  },
+  {
+   "fieldname": "column_break_co10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "frappe_user_password",
+   "fieldtype": "Data",
+   "label": "Frappe user Password"
+  },
+  {
+   "fieldname": "mysql_password",
+   "fieldtype": "Data",
+   "label": "Mysql_password"
+  },
+  {
+   "fieldname": "admin_password",
+   "fieldtype": "Data",
+   "label": "Admin Password"
+  },
+  {
+   "fieldname": "public_type",
+   "fieldtype": "Select",
+   "label": "Public Type",
+   "options": "Elastic\nNon_elastic"
+  },
+  {
+   "fieldname": "section_break_icbc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Table",
+   "label": "user",
+   "options": "user_mapping"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-30 14:47:18.105861",
+ "modified_by": "Administrator",
+ "module": "one_tap_hack",
+ "name": "Sanjukta Requ",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

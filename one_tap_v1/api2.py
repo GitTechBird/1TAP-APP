@@ -52,7 +52,7 @@ def create_project_task():
 
 
 @frappe.whitelist()
-def delete_item():
+def delete_item(allow_guest=True):
     try:
         # Use frappe.delete_doc with the document type ('Item') and document name ('ITEM-001')
         frappe.delete_doc("Item", "Vishal")
@@ -186,7 +186,7 @@ def create_company_details():
    
 @frappe.whitelist()
 def ping():
-    return"Sanju"
+    return"Sanju & Saanvika"
 
 
 
